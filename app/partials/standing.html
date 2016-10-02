@@ -1,0 +1,11 @@
+<div ng-controller="CollapseDemoCtrl">
+  <uib-accordion>
+    <div uib-accordion-group class="panel-default col-sm-2 col-md-4 col-lg-6" ng-repeat="team in standings">
+      <uib-accordion-heading>
+        {{team.position}}. {{team.team}}
+      </uib-accordion-heading>
+      <p> <span> GP: </span> <span> {{team.overall.matches_played}} </span></p>
+      <p> <span> PTS: </span> <span> {{team.overall.points}} </span></p>
+    </div>
+  </uib-accordion>
+</div>
